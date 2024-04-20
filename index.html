@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="bmi calc, bmi calculator, tamimcpp">
+	<meta name="author" content="Tamim Ahmad">
+	<meta name="google-site-verification" content="x3Wj_ZDZQWEhXWp9FGGOfKnR22A7PGQ4CxgB4Iie9zk">
+	<title>Body shape indicator</title>
+	<link rel="icon" href="" sizes="16x16" type="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+	<div class="cards">
+		<form>
+			<div id="weightInput" class="input-field">
+				<input id="weight" type="number" pattern="[0-9]*" placeholder="Enter weight in (kg)">
+			</div>
+			<div id="heightInput" class="input-field">
+				<input id="height" type="number" pattern="[0-9]*" placeholder="Enter height in (metre)">
+			</div>
+			<div id="showResult"></div>
+			<div class="reset">
+				<button type="button" class="waves-effect"
+					onClick="window.location.reload()"><span></span><span></span><span></span><span></span>reset</button>
+			</div>
+			<div class="results">
+				<button type="button" class="waves-effect"
+					onclick="results()"><span></span><span></span><span></span><span></span>Compute BMI</button>
+			</div>
+		</form>
+	</div>
+	<div class="cards-2">
+		<div class="message">
+			
+		</div>
+		<div id="showUnderweight"></div>
+		<div id="showNormal"></div>
+		<div id="showOverweight"></div>
+		<div id="showObese"></div>
+	</div>
+	<div id="message"></div>
+	
+	<script src="./js/main.js"></script>
+</body>
+</html>

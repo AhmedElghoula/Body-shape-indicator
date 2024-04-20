@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3C5B6F;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.reset {
+    display: none;
+}
+
+.results button,
+.reset button {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    padding: 10px 20px;
+    color: #153448;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background: #153448;
+    color: #fff;
+}
+
+button:active {
+    background: none;
+    color: #153448;
+}
+
+button span {
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #153448);
+   
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #153448);
+   
+}
+
+
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #153448);
+    
+  
+}
+
+
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #153448);
+ 
+}
+
+
+
+input {
+    width: 100%;
+    padding: 5px 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+form {
+    background-color: #3C5B6F;
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
+}
+
+.cards {
+    margin-top: 100px;
+}
+
+.cards-2,
+#message {
+    margin-top: 50px;
+    padding: 5px 15px;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #353030;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer span a:hover {
+    text-decoration: underline;
+    color: #153448;
+}
+
+.footer .icons {
+    padding-top: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+
+.footer .icons a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    color: #f4f4f4;
+}
+
+.footer .icons a:hover {
+    color: #153448;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
